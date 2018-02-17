@@ -1,7 +1,7 @@
 {
-  "name": "cordova-paramedic",
-  "version": "0.5.0",
-  "license": "Apache 2.0",
+  "name": "cordova-testbed",
+  "version": "0.0.0",
+  "license": "Apache-2.0",
   "description": "Use medic to test a cordova plugin locally",
   "main": "paramedic.js",
   "bin": {
@@ -10,10 +10,7 @@
   "engines": {
     "node": ">=4.3.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/apache/cordova-paramedic.git"
-  },
+  "repository": "ratson/cordova-testbed",
   "scripts": {
     "test": "npm run jshint & npm run test-ios",
     "jshint": "node node_modules/jshint/bin/jshint lib/",
@@ -29,7 +26,7 @@
     "medic",
     "test"
   ],
-  "author": "Jesse MacFadyen",
+  "author": "Ratson",
   "dependencies": {
     "cordova-common": "^1.1.0",
     "expect-telnet": "^0.5.2",
