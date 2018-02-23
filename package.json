@@ -12,7 +12,8 @@
   },
   "repository": "ratson/cordova-testbed",
   "scripts": {
-    "test": "npm run jshint & npm run test-ios",
+    "test": "npm run test-ios",
+    "posttest": "npm run jshint",
     "jshint": "jshint lib/",
     "test-appveyor": "npm run test-windows",
     "test-travis": "npm run test-ios",
