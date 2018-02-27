@@ -5,14 +5,15 @@
   "description": "Use medic to test a cordova plugin locally",
   "main": "lib/paramedic.js",
   "bin": {
-    "cordova-paramedic": "./main.js"
+    "cordova-paramedic": "./main.js",
+    "cordova-testbed": "./testbed/cli.js"
   },
   "engines": {
     "node": ">= 8"
   },
   "repository": "ratson/cordova-testbed",
   "scripts": {
-    "test": "npm run test-ios",
+    "test": "node testbed/cli.js --platform ios --plugin ./spec/testable-plugin/ --verbose",
     "posttest": "npm run jshint",
     "jshint": "jshint lib/",
     "test-appveyor": "npm run test-windows",
@@ -47,7 +48,8 @@
     "tmp": "0.0.33",
     "tree-kill": "^1.1.0",
     "unorm": "^1.4.1",
-    "wd": "^1.2.0"
+    "wd": "^1.2.0",
+    "yargs": "^10.1.2"
   },
   "devDependencies": {
     "jshint": "^2.6.0"
