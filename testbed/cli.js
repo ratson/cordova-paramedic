@@ -6,7 +6,9 @@ const ParamedicConfig = require('../lib/ParamedicConfig')
 
 async function main() {
   const parser = yargs
-    .option('platform')
+    .option('platform', {
+      choices: ['ios', 'browser', 'windows', 'android', 'wp8'],
+    })
     .option('plugin')
     .option('verbose', {
       default: false,
