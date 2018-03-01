@@ -9,7 +9,11 @@ async function main() {
     .option('platform', {
       choices: ['ios', 'browser', 'windows', 'android', 'wp8'],
     })
-    .option('plugin')
+    .option('plugin', {
+      type: 'array',
+      desc:
+        "Set relative or absolute path to a plugin folder with a 'tests' folder, use multiple --plugin flags to test plugins together",
+    })
     .option('verbose', {
       default: false,
     })
