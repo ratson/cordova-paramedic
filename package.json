@@ -37,6 +37,7 @@
     "jasmine-spec-reporter": "^2.4.0",
     "localtunnel": "~1.5.0",
     "minimist": "~1.2.0",
+    "ms": "^2.1.1",
     "path-extra": "^4.2.1",
     "q": "^1.4.1",
     "randomstring": "^1.1.5",

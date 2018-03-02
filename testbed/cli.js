@@ -1,4 +1,5 @@
 'use strict'
+const ms = require('ms')
 const yargs = require('yargs')
 
 const paramedic = require('..')
@@ -13,6 +14,10 @@ async function main() {
       type: 'array',
       desc:
         "Set relative or absolute path to a plugin folder with a 'tests' folder, use multiple --plugin flags to test plugins together",
+    })
+    .option('timeout', {
+      default: ms('10m'),
+      desc: 'Wait number of millisecs for tests to pass|fail',
     })
     .option('verbose', {
       default: false,
