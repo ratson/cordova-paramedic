@@ -15,6 +15,10 @@ async function main() {
       desc:
         "Set relative or absolute path to a plugin folder with a 'tests' folder, use multiple --plugin flags to test plugins together",
     })
+    .option('build-only', {
+      default: false,
+      desc: 'Build the project without running the tests',
+    })
     .option('timeout', {
       default: ms('10m'),
       desc: 'Wait number of millisecs for tests to pass|fail',
@@ -34,6 +38,10 @@ async function main() {
 
   if (argv.platform) {
     paramedicConfig.setPlatform(argv.platform)
+  }
+
+  if (argv.buildOnly) {
+    paramedicConfig.setAction('build')
   }
 
   const isTestPassed = await paramedic.run(paramedicConfig)
