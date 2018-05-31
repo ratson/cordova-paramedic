@@ -19,6 +19,10 @@ async function main() {
       default: false,
       desc: 'Build the project without running the tests',
     })
+    .option('ci', {
+      default: Boolean(process.env.CI),
+      desc: 'Skip tests that require user interaction',
+    })
     .option('timeout', {
       default: ms('10m'),
       desc: 'Wait number of millisecs for tests to pass|fail',
@@ -42,6 +46,10 @@ async function main() {
 
   if (argv.buildOnly) {
     paramedicConfig.setAction('build')
+  }
+
+  if (argv.ci) {
+    paramedicConfig.setCI(argv.ci)
   }
 
   const isTestPassed = await paramedic.run(paramedicConfig)
