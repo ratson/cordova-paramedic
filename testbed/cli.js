@@ -27,6 +27,10 @@ async function main() {
       default: ms('10m'),
       desc: 'Wait number of millisecs for tests to pass|fail',
     })
+    .option('output-dir', {
+      desc: 'Path to save Junit results file & Device logs',
+      normalize: true,
+    })
     .option('verbose', {
       default: false,
     })
@@ -50,6 +54,10 @@ async function main() {
 
   if (argv.ci) {
     paramedicConfig.setCI(argv.ci)
+  }
+
+  if (argv.outputDir) {
+    paramedicConfig.setOutputDir(argv.outputDir)
   }
 
   const isTestPassed = await paramedic.run(paramedicConfig)
