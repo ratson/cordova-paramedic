@@ -23,6 +23,10 @@ async function main() {
       default: Boolean(process.env.CI),
       desc: 'Skip tests that require user interaction',
     })
+    .option('clean-up-after-run', {
+      default: true,
+      desc: 'Cleans up the application after tests run',
+    })
     .option('timeout', {
       default: ms('10m'),
       desc: 'Wait number of millisecs for tests to pass|fail',
