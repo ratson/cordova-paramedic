@@ -70,4 +70,11 @@ async function main() {
   process.exit(exitCode)
 }
 
-main()
+main().catch(error => {
+  if (error && error.stack) {
+    console.error(error.stack)
+  } else if (error) {
+    console.error(error)
+  }
+  process.exit(1)
+})
