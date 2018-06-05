@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 'use strict'
 const ms = require('ms')
 const yargs = require('yargs')
@@ -40,7 +41,7 @@ async function main() {
     })
     .version()
     .help()
-  const argv = parser.argv
+  const { argv } = parser
 
   const paramedicConfig = ParamedicConfig.parseFromArguments(argv)
 
