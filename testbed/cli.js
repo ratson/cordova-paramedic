@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict'
 const ms = require('ms')
+const signale = require('signale')
 const yargs = require('yargs')
 
 const paramedic = require('..')
@@ -67,15 +68,11 @@ async function main() {
 
   const isTestPassed = await paramedic.run(paramedicConfig)
   const exitCode = isTestPassed ? 0 : 1
-  console.log(`Finished with exit code ${exitCode}`)
+  signale.info(`Finished with exit code ${exitCode}`)
   process.exit(exitCode)
 }
 
 main().catch(error => {
-  if (error && error.stack) {
-    console.error(error.stack)
-  } else if (error) {
-    console.error(error)
-  }
+  signale.error(error)
   process.exit(1)
 })

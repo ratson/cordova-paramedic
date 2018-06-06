@@ -46,6 +46,7 @@
     "sauce-connect-launcher": "^1.2.2",
     "saucelabs": "^1.2.0",
     "shelljs": "~0.3.0",
+    "signale": "^1.1.0",
     "socket.io": "^2.1.1",
     "tcp-port-used": "^0.1.2",
     "tmp": "0.0.33",
