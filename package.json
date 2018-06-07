@@ -32,7 +32,7 @@
   ],
   "author": "Ratson",
   "dependencies": {
-    "cordova-common": "^1.1.0",
+    "cordova-common": "^2.2.3",
     "expect-telnet": "^1.0.0",
     "jasmine": "3.1.0",
     "jasmine-reporters": "^2.1.1",
