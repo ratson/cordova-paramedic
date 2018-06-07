@@ -11,11 +11,13 @@ async function main() {
   const parser = yargs
     .option('platform', {
       choices: ['ios', 'browser', 'windows', 'android', 'wp8'],
+      demandOption: true,
     })
     .option('plugin', {
       type: 'array',
       desc:
         "Set relative or absolute path to a plugin folder with a 'tests' folder, use multiple --plugin flags to test plugins together",
+      demandOption: true,
     })
     .option('build-only', {
       default: false,
