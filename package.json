@@ -27,8 +27,13 @@
   },
   "keywords": [
     "cordova",
+    "test",
+    "plugin",
+    "cli",
     "medic",
-    "test"
+    "paramedic",
+    "testbed",
+    "ecosystem:cordova"
   ],
   "author": "Ratson",
   "dependencies": {
