@@ -38,6 +38,7 @@
   "author": "Ratson",
   "dependencies": {
     "cordova-common": "^2.2.3",
+    "execa": "^0.10.0",
     "expect-telnet": "^1.0.0",
     "jasmine": "3.1.0",
     "jasmine-reporters": "^2.3.1",
