@@ -20,6 +20,7 @@ async function main() {
       demandOption: true,
     })
     .option('build-only', {
+      alias: 'justbuild',
       default: false,
       desc: 'Build the project without running the tests',
     })
