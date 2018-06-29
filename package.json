@@ -37,13 +37,14 @@
   ],
   "author": "Ratson",
   "dependencies": {
-    "cordova-common": "^2.2.3",
+    "cordova-common": "^2.2.4",
     "execa": "^0.10.0",
     "expect-telnet": "^1.0.0",
     "jasmine": "3.1.0",
     "jasmine-reporters": "^2.3.1",
     "jasmine-spec-reporter": "^4.2.1",
     "localtunnel": "~1.9.0",
+    "make-promises-safe": "^1.1.0",
     "minimist": "~1.2.0",
     "ms": "^2.1.1",
     "path-extra": "^4.2.1",
@@ -58,12 +59,12 @@
     "tmp": "0.0.33",
     "tree-kill": "^1.2.0",
     "unorm": "^1.4.1",
-    "wd": "^1.9.0",
-    "yargs": "^11.0.0"
+    "wd": "^1.10.1",
+    "yargs": "^12.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-concise": "^0.26.1",
+    "eslint": "^5.0.1",
+    "eslint-config-concise": "^0.27.3",
     "jshint": "^2.9.5",
     "npm-run-all": "^4.1.3"
   },

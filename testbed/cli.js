@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 'use strict'
+
+require('make-promises-safe').abort = true
+
 const ms = require('ms')
 const signale = require('signale')
 const yargs = require('yargs')
