@@ -1,12 +1,8 @@
 {
-  "private": true,
-  "name": "testable-plugin",
-  "version": "0.0.0",
+  "name": "sh-read-input-plugin",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
