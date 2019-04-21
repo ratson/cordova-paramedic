@@ -13,15 +13,13 @@
   },
   "repository": "ratson/cordova-testbed",
   "scripts": {
-    "test": "node testbed/cli.js --platform ios --plugin ./spec/testable-plugin/ --verbose",
-    "posttest": "run-s lint:*",
-    "lint": "run-s lint:*",
-    "lint:eslint": "eslint testbed",
-    "lint:jshint": "jshint lib/",
+    "testbed": "node testbed/cli.js --platform ios --plugin ./spec/testable-plugin/ --verbose",
+    "posttest": "run-s lint",
+    "lint": "eslint lib testbed",
     "test-appveyor": "npm run test-browser",
-    "test-travis": "npm run test-ios",
+    "test-travis": "npm run eslint & npm run test-ios",
     "test-on-windows": "npm run jshint & npm run test-local-on-windows && npm run test-saucelabs-on-windows",
-    "jshint": "node node_modules/jshint/bin/jshint lib/",
+    "test": "npm run testbed",
     "test-local": "npm run test-browser && npm run test-android && npm run test-ios",
     "test-local-on-windows": "npm run test-browser && npm run test-android",
     "test-android": "node main.js --platform android --plugin ./spec/testable-plugin/",
@@ -46,9 +44,11 @@
   ],
   "author": "Ratson",
   "dependencies": {
+    "cordova": "9.0.1-nightly.2019.4.19.139ef16d",
     "cordova-common": "^3.1.0",
     "execa": "^1.0.0",
     "expect-telnet": "^1.0.0",
+    "ios-sim": "^8.0.1",
     "jasmine": "3.3.1",
     "jasmine-reporters": "^2.3.2",
     "jasmine-spec-reporter": "^4.2.1",
@@ -72,14 +72,13 @@
     "yargs": "^13.2.2"
   },
   "devDependencies": {
-    "eslint": "^5.15.3",
-    "eslint-config-concise": "^0.36.0",
-    "jshint": "^2.10.2",
+    "eslint": "^5.16.0",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
     "npm-run-all": "^4.1.5"
-  },
-  "eslintConfig": {
-    "extends": [
-      "concise"
-    ]
   }
 }
