@@ -39,11 +39,9 @@ matrix:
   include:
     # one local test, without saucelabs
     - env: PLATFORM=local
-      os: osx
-      osx_image: xcode9
+      <<: *_ios
 
     # many tests with saucelabs
-
     - env: PLATFORM=browser-chrome
     - env: PLATFORM=browser-firefox
     - env: PLATFORM=browser-safari
@@ -89,4 +87,3 @@ script:
   - if [[ "$PLATFORM" =~ local ]]; then npm run test-ios; fi
   - if [[ "$PLATFORM" =~ TODO ]]; then npm run test-android; fi
   - if [[ "$PLATFORM" != local ]]; then node main.js --config ./pr/$PLATFORM --plugin ./spec/testable-plugin/ --shouldUseSauce --buildName travis-paramedic-$TRAVIS_JOB_NUMBER; fi
-

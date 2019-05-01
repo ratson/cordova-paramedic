@@ -29,6 +29,7 @@ Cordova Paramedic is currently used to automatically run all plugin tests on CI.
 - [Configuration file](#configuration-file)
 - [API Interface](#api-interface)
 - [Quirks](#quirks)
+  * [Windows](#windows)
 
 <!--<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>-->
 
@@ -394,6 +395,6 @@ paramedic.run(config);
 
 ## Quirks
 
-### Windows apps
+### Windows
 
-For Paramedic to work correctly for Windows apps you'll need to allow the loopback for "HelloCordova" app using [Windows Loopback Exemption Manager](https://loopback.codeplex.com/).
+For Paramedic to work correctly for Windows apps you'll need to allow the loopback for "HelloCordova" app using [Windows Loopback Exemption Manager](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager) ([download](https://github.com/piksel/Windows-Loopback-Exemption-Manager/releases/tag/v1.0.0.1)).
