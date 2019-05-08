@@ -1,7 +1,0 @@
-{
-    "platform": "ios@https://github.com/apache/cordova-ios.git",
-    "action": "run",
-    "cleanUpAfterRun": true,
-    "target": "iPhone-SE\\,\\ 10\\.0",
-    "verbose": true
-}

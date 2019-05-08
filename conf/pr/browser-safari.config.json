@@ -2,7 +2,8 @@
     "platform": "browser",
     "action": "run",
     "cleanUpAfterRun": true,
-    "verbose": true,
+    "shouldUseSauce": true,
     "sauceDeviceName": "safari",
-    "saucePlatformVersion": "11.1"
+    "saucePlatformVersion": "11.1",
+    "verbose": true
 }

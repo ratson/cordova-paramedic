@@ -2,7 +2,8 @@
     "platform": "browser",
     "action": "run",
     "cleanUpAfterRun": true,
-    "verbose": true,
+    "shouldUseSauce": true,
     "sauceDeviceName": "chrome",
-    "saucePlatformVersion": "59.0"
+    "saucePlatformVersion": "59.0",
+    "verbose": true
 }

@@ -1,8 +1,0 @@
-{
-    "platform": "android@https://github.com/apache/cordova-android.git",
-    "action": "run",
-    "cleanUpAfterRun": true,
-    "saucePlatformVersion": "7.0",
-    "sauceDeviceName": "Android GoogleAPI Emulator",
-    "verbose": true
-}

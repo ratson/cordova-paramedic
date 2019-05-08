@@ -2,7 +2,8 @@
     "platform": "browser",
     "action": "run",
     "cleanUpAfterRun": true,
-    "verbose": true,
+    "shouldUseSauce": true,
     "sauceDeviceName": "MicrosoftEdge",
-    "saucePlatformVersion": "15.15063"
+    "saucePlatformVersion": "15.15063",
+    "verbose": true
 }

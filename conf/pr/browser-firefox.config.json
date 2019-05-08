@@ -2,7 +2,8 @@
     "platform": "browser",
     "action": "run",
     "cleanUpAfterRun": true,
-    "verbose": true,
+    "shouldUseSauce": true,
     "sauceDeviceName": "firefox",
-    "saucePlatformVersion": "54.0"
+    "saucePlatformVersion": "54.0",
+    "verbose": true
 }
