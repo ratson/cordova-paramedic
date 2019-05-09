@@ -18,7 +18,7 @@
     "lint": "eslint lib testbed",
     "test-appveyor": "npm run test-browser",
     "test-travis": "npm run eslint & npm run test-ios",
-    "test-on-windows": "npm run jshint & npm run test-local-on-windows && npm run test-saucelabs-on-windows",
+    "test-on-windows": "npm run test-local-on-windows && npm run test-saucelabs-on-windows",
     "test": "npm run testbed",
     "test-local": "npm run test-browser && npm run test-android && npm run test-ios",
     "test-local-on-windows": "npm run test-browser && npm run test-android",
