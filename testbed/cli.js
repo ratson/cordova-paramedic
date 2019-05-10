@@ -16,6 +16,9 @@ async function main () {
             choices: ['ios', 'browser', 'windows', 'android', 'wp8'],
             demandOption: true
         })
+        .option('target', {
+            desc: 'Set target to deploy to'
+        })
         .option('plugin', {
             type: 'array',
             desc:
@@ -66,6 +69,10 @@ async function main () {
 
     if (argv.ci) {
         paramedicConfig.setCI(argv.ci);
+    }
+
+    if (argv.target) {
+        paramedicConfig.setTarget(argv.target);
     }
 
     if (argv.outputDir) {
