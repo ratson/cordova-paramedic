@@ -398,3 +398,4 @@ paramedic.run(config);
 ### Windows
 
 For Paramedic to work correctly for Windows apps you'll need to allow the loopback for "HelloCordova" app using [Windows Loopback Exemption Manager](https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager) ([download](https://github.com/piksel/Windows-Loopback-Exemption-Manager/releases/tag/v1.0.0.1)).
+
